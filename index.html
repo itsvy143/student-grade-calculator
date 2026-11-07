@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Grade Calculator</h1>
+      <p>Calculate and track student grades easily.</p>
+    </header>
+
+    <main>
+      <section class="calculator">
+        <h2>Calculate Student Grade</h2>
+
+        <form id="grade-form">
+          <label for="student-name">Student Name</label>
+          <input
+            type="text"
+            id="student-name"
+            placeholder="Enter student name"
+            required
+          />
+
+          <label for="prelim">Preliminary Grade</label>
+          <input
+            type="number"
+            id="prelim"
+            placeholder="Enter grade"
+            min="0"
+            max="100"
+            required
+          />
+
+          <label for="midterm">Midterm Grade</label>
+          <input
+            type="number"
+            id="midterm"
+            placeholder="Enter grade"
+            min="0"
+            max="100"
+            required
+          />
+
+          <label for="final">Final Grade</label>
+          <input
+            type="number"
+            id="final"
+            placeholder="Enter grade"
+            min="0"
+            max="100"
+            required
+          />
+
+          <button type="submit">Calculate Grade</button>
+        </form>
+
+        <div id="result" class="result">
+          <p>Your calculated grade will appear here.</p>
+        </div>
+      </section>
+
+      <section class="records">
+        <h2>Student Records</h2>
+
+        <ul id="student-list">
+          <li id="empty-message">No student records yet.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Student Grade Calculator</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
